@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "startbootstrap-sb-admin-2": "^3.3.7"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  }
+}

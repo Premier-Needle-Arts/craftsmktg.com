@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/ico" href="img/favicon.ico">
+    <script defer  language="JavaScript" type="text/javascript" src="./main.js"></script>
+
+    <title>Crafts Promos</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <img class="fas" width = "100" src="img/pna_white.png" alt="...">
+                </div>
+                
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Promotion Builder</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Interface
+            </div>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Promotion Types</span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Custom Processors:</h6>
+                        <a class="collapse-item" href="">Single Item Discount</a>
+                        <a class="collapse-item" href="">Discount By Category</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Product Management
+            </div>
+
+            <!-- Nav Item - Charts -->
+            <li class="nav-item">
+                <a class="nav-link" href="">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Categories</span></a>
+            </li>
+
+            <!-- Nav Item - Tables -->
+            <li class="nav-item">
+                <a class="nav-link" href="">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Inventory</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Message -->
+            <div class="sidebar-card d-none d-lg-flex">
+                <p class="text-center mb-2">Are you looking for a promo that doesn't exist yet?</p>
+                <a class="btn btn-success btn-sm" href="https://startbootstrap.com/theme/sb-admin-pro">Email Me!</a>
+            </div>
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Nav Item - Alerts -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bell fa-fw"></i>
+                                <!-- Counter - Alerts -->
+                                <span class="badge badge-danger badge-counter">1</span>
+                            </a>
+                            <!-- Dropdown - Alerts -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="alertsDropdown">
+                                <h6 class="dropdown-header">
+                                    Alerts Center
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-primary">
+                                            <i class="fas fa-file-alt text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">May 19, 2023</div>
+                                        <span class="font-weight-bold">Yarn families were updated!</span>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                            </div>
+                        </li>
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+
+                    <!-- ROW 1 -->        
+                    <div class="row">
+
+                        <!-- ROW 1, COLUMN 1 -->
+                        <div class="col-xl-2 col-md-6">
+
+                            <!-- QUESTION 1: BRAND -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Brand</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="dropdown">
+                                        <select class="form-control" id="brand-input">
+                                            <option value="" disabled selected hidden></option>
+                                            <option value="C">Connecting Threads</option>
+                                            <option value="W">Crochet</option>
+                                            <option value="K">Knit Picks</option>
+                                            <option value="S">Superior Threads</option>
+                                          </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- ROW 1, COLUMN 2 -->
+                        <div class="col-xl-3 col-md-6 ">
+
+                            <!-- Promo Code -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Promotion Code</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="input">
+                                        <input class="form-control" id="promo-input" type="text" value="" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- ROW 1, COLUMN 3 -->
+                        <div class="col-xl-3 col-md-6">
+
+                            <!-- PROMO TYPE -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Promotion Type</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="dropdown">
+                                        <select class="form-control" id="promo-type-input">
+                                            <option value="" disabled selected hidden></option>
+                                            <option value="SingleItemDiscountPromo">Discount By Item</option>
+                                            <option value="DiscountByCategory">Discount By Category</option>
+                                            <option value="FreeItemPromo">Free Item</option>
+                                            <option value="ShippingPromo">Free Shipping</option>
+                                            <option value="BuyXGetNDiscount">Buy X, Get Y Discount</option>
+                                            <option value="PerItemBuyXGetNDiscount">Buy X Item, Get Y Discount</option>
+                                            <option value="PerCategoryBuyXGetNDiscount">Buy X Category, Get Y Discount</option>
+                                            <option value="BuyXFromCatAGetDiscountCatB">Buy X From Category A, Get Y Discount On Category B</option>
+                                            <option value="MostExpensiveItemDiscount">Most Expensive Item Discount</option>
+                                          </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- ROW 1, COLUMN 4 -->
+                        <div class="col-xl-3 col-md-6">
+
+                            <!-- Threshold Type -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Use Case</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="dropdown">
+                                        <select class="form-control" id="use-case-input">
+                                            <option value="" disabled selected hidden></option>
+                                            <option value="Dollar">Once Per Customer</option>
+                                            <option value="Quantity">Unlimited Use</option>
+                                          </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- ROW 1 END -->   
+
+                    <!-- ROW 2 -->        
+                    <div class="row">
+
+                        <!-- ROW 2, COLUMN 1 -->
+                        <div class="col-xl-4 col-md-6">
+
+                            <!-- Start Date -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Start Date</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="container">
+                                        <div class="form-group">
+                                            <div class="datepicker date input-group">
+                                                <input type="text" placeholder="Choose Date" class="form-control" id="start-input">
+                                                <div class="input-group-append">
+                                                <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                        <!-- ROW 2, COLUMN 2 -->
+                        <div class="col-xl-4 col-md-6 ">
+
+                            <!-- End Date -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">End Date</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="container">
+                                        <div class="form-group">
+                                            <div class="datepicker date input-group">
+                                                <input type="text" placeholder="Choose Date" class="form-control" id="end-input">
+                                                <div class="input-group-append">
+                                                <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- ROW 2, COLUMN 3 -->
+                        <div class="col-xl-4 col-md-6 ">
+
+                            <!-- Testing Date -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Testing Date</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="container">
+                                        <div class="form-group">
+                                            <div class="datepicker date input-group">
+                                                <input type="text" placeholder="Choose Date" class="form-control" id="test-input">
+                                                <div class="input-group-append">
+                                                <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- ROW 2 END-->
+
+                    <!-- ROW 3 -->        
+                    <div class="row">
+
+                        <!-- ROW 3, COLUMN 1 -->
+                        <div class="col-xl-2 col-md-6 ">
+
+                            <!-- Discount Type -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Discount Type</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="dropdown">
+                                        <select class="form-control" id="discount-type-input">
+                                            <option value="" disabled selected hidden></option>
+                                            <option value="$">Dollar</option>
+                                            <option value="%">Percent</option>
+                                          </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                        <!-- ROW 3, COLUMN 2 -->
+                        <div class="col-xl-4 col-md-6">
+
+                            <!-- Discount Amount -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Discount Amount</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="input">
+                                        <input class="form-control" id="discount-input" type="text" value="" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- ROW 3, COLUMN 3 -->
+                        <div class="col-xl-2 col-md-6">
+
+                            <!-- Threshold Type -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Threshold Type</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="dropdown">
+                                        <select class="form-control" id="threshold-type-input">
+                                            <option value="" disabled selected hidden></option>
+                                            <option value="Dollar">Dollar</option>
+                                            <option value="Quantity">Quantity</option>
+                                          </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ROW 3, COLUMN 4 -->
+                        <div class="col-xl-4 col-md-6">
+
+                            <!-- Threshold Amount -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Threshold Amount</h6>
+                                </div>
+                                <div class="card-body">
+                                    <input class="form-control" id="threshold-input" type="text" value="" required>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- ROW 3 END-->
+
+
+                    <!-- ROW 4 -->        
+                    <div class="row">
+
+                        <!-- ROW 4, COLUMN 1 -->
+                        <div class="col-xl-12 col-md-6 ">
+
+                            <!-- Category -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Item or Category</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="input">
+                                        <input class="form-control" id="item-input" type="text" value="" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- ROW 4 END-->
+
+                    <!-- ROW 5 -->        
+                    <div class="row">
+
+                        <!-- ROW 5, COLUMN 1 -->
+                        <div class="col-xl-12 col-md-6 ">
+
+                            <!-- Category -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Description</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="input">
+                                        <input class="form-control" id="description-input" type="text" value="" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- ROW 5 END-->
+
+                    <!-- ROW 6 -->
+                    <div class="d-sm-flex align-items-center justify-content-center mb-4">
+                        <button onclick="myFunction()" type = "button"> Generate UTM </button>
+                    </div>
+                    <!-- ROW 6 END-->
+
+                    <!-- ROW 7 -->        
+                    <div class="row">
+
+                        <!-- ROW 7, COLUMN 1 -->
+                        <div class="col-xl-12 col-md-6 ">
+
+                            <!-- Category -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Output</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <textarea class="form-control" id="output" rows="7"></textarea>
+                                      </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- ROW 7 END-->
+
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; Premier Needle Arts 2023</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Bootstrap core JavaScript-->
+    <script type='module' src="vendor/jquery/jquery.min.js"></script>
+    <script type='module' src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script type='module' src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script type='module' src="js/sb-admin-2.min.js"></script>
+
+</body>
+
+</html>
