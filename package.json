@@ -2,7 +2,6 @@
   "name": "crafts-promos",
   "version": "1.0.0",
   "description": "Plz work",
-  "main": "index.js",
   "dependencies": {
     "ansi-styles": "^4.3.0",
     "base-x": "^3.0.9",
@@ -103,7 +102,12 @@
     "svgo": "^3.0.2",
     "utility-types": "^3.10.0",
     "update-browserslist-db": "^1.0.11",
-    "xxhash-wasm": "^0.4.2"
+    "xxhash-wasm": "^0.4.2",
+    "@fortawesome/fontawesome-free": "5.15.3",
+    "bootstrap": "4.6.0",
+    "datatables.net-bs4": "1.10.24",
+    "jquery": "3.6.0",
+    "jquery.easing": "^1.4.1"
   },
   "devDependencies": {},
   "scripts": {
@@ -119,5 +123,6 @@
   "bugs": {
     "url": "https://github.com/MDeanLindsay/Crafts-Promos/issues"
   },
-  "homepage": "https://github.com/MDeanLindsay/Crafts-Promos#readme"
+  "homepage": "https://github.com/MDeanLindsay/Crafts-Promos#readme",
+  "source": "index.html"
 }
