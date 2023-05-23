@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Plz work",
   "dependencies": {
+    "parcel": "^2.8.3",
     "@fortawesome/fontawesome-free": "5.15.3",
     "bootstrap": "4.6.0",
     "datatables.net-bs4": "1.10.24",
