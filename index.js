@@ -1,17 +1,17 @@
 function addBrand() {
   var brandSource = document.getElementById('brand-input').value;
   if (brandSource != '') {
-    return ('Brand: ') + brandSource;
+    return 'Brand: ' + brandSource;
   }
   else {
-    return ('');
+    return '';
   }
 }
 
 function addPromo() {
   var promoSource = document.getElementById('promo-input').value;
   if (promoSource != '') {
-    return ('\nPromotion Code: ') + promoSource;
+    return '\nPromotion Code: ' + promoSource;
   }
   else {
     return ('');
@@ -22,46 +22,46 @@ function addMediaID() {
   var brandSource = document.getElementById('brand-input').value;
   var promoSource = document.getElementById('promo-input').value;
   if (brandSource == 'CT') {
-    return ('\nMedia ID: C') + promoSource;
+    return '\nMedia ID: C' + promoSource;
   }
   else if (brandSource == 'KP') {
-    return ('\nMedia ID: K') + promoSource;
+    return '\nMedia ID: K' + promoSource;
   }
   else if (brandSource == 'ST') {
-    return ('\nMedia ID: S') + promoSource;
+    return '\nMedia ID: S' + promoSource;
   }
   else if (brandSource == 'WC') {
-    return ('\nMedia ID: W') + promoSource;
+    return '\nMedia ID: W' + promoSource;
   }
   else {
-    return ('');
+    return '';
   }
 }
 
 function addPromoType() {
   var promoTypeSource = document.getElementById('promo-type-input').value;
   if (promoTypeSource != '') {
-    return ('\nProcessor: ') + promoTypeSource;
+    return '\nProcessor: ' + promoTypeSource;
   }
   else {
-    return ('');
+    return '';
   }
 }
 
 function addUseCase() {
   var useCaseSource = document.getElementById('use-case-input').value;
   if (useCaseSource != '') {
-    return ('\nAccount Limit: ') + useCaseSource;
+    return '\nAccount Limit: ' + useCaseSource;
   }
   else {
-    return ('');
+    return '';
   }
 }
 
 function addStartDate() {
   var startDateSource = document.getElementById('datepicker1').value;
   if (startDateSource != '') {
-    return ('\nStart Date: ') + startDateSource;
+    return '\nStart Date: ' + startDateSource + ' 12:00 A.M.';
   }
   else {
     return ('');
@@ -71,7 +71,7 @@ function addStartDate() {
 function addEndDate() {
   var endDateSource = document.getElementById('datepicker2').value;
   if (endDateSource != '') {
-    return ('\nEnd Date: ') + endDateSource;
+    return '\nEnd Date: ' + endDateSource +  ' 11:59 P.M.';
   }
   else {
     return ('');
@@ -81,10 +81,10 @@ function addEndDate() {
 function addTestDate() {
   var testDateSource = document.getElementById('datepicker3').value;
   if (testDateSource != '') {
-    return ('\nTest Date: ') + testDateSource;
+    return '\nTest Date: ' + testDateSource + ' 12:00 A.M.';
   }
   else {
-    return ('');
+    return '';
   }
 }
 
@@ -92,13 +92,13 @@ function addDiscount() {
   var discountSource = document.getElementById('discount-input').value;
   var discountTypeSource = document.getElementById('discount-type-input').value;
   if (discountTypeSource == '$') {
-    return ('\nDiscount: ') + discountTypeSource + discountSource;
+    return '\nDiscount: ' + discountTypeSource + discountSource;
   }
   else if (discountTypeSource == '%') {
-    return ('\nDiscount: ') + discountSource + discountTypeSource;
+    return '\nDiscount: ' + discountSource + discountTypeSource;
   }
   else {
-    return ('');
+    return '';
   }
 }
 
@@ -106,33 +106,33 @@ function addThreshold() {
   var thresholdSource = document.getElementById('threshold-input').value;
   var thresholdTypeSource = document.getElementById('threshold-type-input').value;
   if (thresholdTypeSource == '$') {
-    return ('\nThreshold: ') + thresholdTypeSource + thresholdSource;
+    return '\nThreshold: ' + thresholdTypeSource + thresholdSource;
   }
   else if (thresholdTypeSource == 'Units') {
-    return ('\nThreshold: ') + thresholdSource + " " + thresholdTypeSource;
+    return '\nThreshold: ' + thresholdSource + " " + thresholdTypeSource;
   }
   else {
-    return ('');
+    return '';
   }
 }
 
 function addItems() {
   var itemSource = document.getElementById('item-input').value;
   if (itemSource != '') {
-    return ('\nItems: ') + itemSource;
+    return '\nItems: ' + itemSource;
   }
   else {
-    return ('');
+    return '';
   }
 }
 
 function addDescription() {
   var descriptionSource = document.getElementById('description-input').value;
   if (descriptionSource != '') {
-    return ('\nDescription: ') + descriptionSource;
+    return '\nDescription: ' + descriptionSource;
   }
   else {
-    return ('');
+    return '';
   }
 }
 
