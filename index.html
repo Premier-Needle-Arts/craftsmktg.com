@@ -161,7 +161,7 @@
                     <div class="row">
 
                         <!-- ROW 1, COLUMN 1 -->
-                        <div class="col-xl-2 col-md-6">
+                        <div class="col-xl-3 col-md-6">
 
                             <!-- QUESTION 1: BRAND -->
                             <div class="card shadow mb-4">
@@ -172,10 +172,10 @@
                                     <div class="dropdown">
                                         <select class="form-control" id="brand-input">
                                             <option value="" disabled selected hidden></option>
-                                            <option value="C">Connecting Threads</option>
-                                            <option value="W">Crochet</option>
-                                            <option value="K">Knit Picks</option>
-                                            <option value="S">Superior Threads</option>
+                                            <option value="CT">CT</option>
+                                            <option value="KP">KP</option>
+                                            <option value="ST">ST</option>
+                                            <option value="WC">WC</option>
                                           </select>
                                     </div>
                                 </div>
@@ -212,6 +212,7 @@
                                     <div class="dropdown">
                                         <select class="form-control" id="promo-type-input">
                                             <option value="" disabled selected hidden></option>
+                                            <option value="">Discount Sitewide</option>
                                             <option value="SingleItemDiscountPromo">Discount By Item</option>
                                             <option value="DiscountByCategory">Discount By Category</option>
                                             <option value="FreeItemPromo">Free Item</option>
@@ -220,7 +221,6 @@
                                             <option value="PerItemBuyXGetNDiscount">Buy X Item, Get Y Discount</option>
                                             <option value="PerCategoryBuyXGetNDiscount">Buy X Category, Get Y Discount</option>
                                             <option value="BuyXFromCatAGetDiscountCatB">Buy X From Category A, Get Y Discount On Category B</option>
-                                            <option value="MostExpensiveItemDiscount">Most Expensive Item Discount</option>
                                           </select>
                                     </div>
                                 </div>
@@ -240,8 +240,8 @@
                                     <div class="dropdown">
                                         <select class="form-control" id="use-case-input">
                                             <option value="" disabled selected hidden></option>
-                                            <option value="Dollar">Once Per Customer</option>
-                                            <option value="Quantity">Unlimited Use</option>
+                                            <option value="1">Once Per Customer</option>
+                                            <option value="0">Unlimited Use</option>
                                           </select>
                                     </div>
                                 </div>
@@ -263,13 +263,11 @@
                                     <h6 class="m-0 font-weight-bold text-primary">Start Date</h6>
                                 </div>
                                 <div class="card-body">
-                                    <div class="container">
-                                        <div class="form-group">
-                                            <div class="datepicker date input-group">
-                                                <input type="text" placeholder="Choose Date" class="form-control" id="start-input">
-                                                <div class="input-group-append">
-                                                <span class="input-group-text"><i class="fa fa-calendar"></i></span>
-                                                </div>
+                                    <div class="form-group">
+                                        <div class="datepicker date input-group">
+                                            <input type="text" class="form-control" id="datepicker1" placeholder="Select date">
+                                            <div class="input-group-append">
+                                            <span class="input-group-text"><i class="fa fa-calendar"></i></span>
                                             </div>
                                         </div>
                                     </div>
@@ -287,13 +285,11 @@
                                     <h6 class="m-0 font-weight-bold text-primary">End Date</h6>
                                 </div>
                                 <div class="card-body">
-                                    <div class="container">
-                                        <div class="form-group">
-                                            <div class="datepicker date input-group">
-                                                <input type="text" placeholder="Choose Date" class="form-control" id="end-input">
-                                                <div class="input-group-append">
-                                                <span class="input-group-text"><i class="fa fa-calendar"></i></span>
-                                                </div>
+                                    <div class="form-group">
+                                        <div class="datepicker date input-group">
+                                            <input type="text" class="form-control" id="datepicker2" placeholder="Select date">
+                                            <div class="input-group-append">
+                                            <span class="input-group-text"><i class="fa fa-calendar"></i></span>
                                             </div>
                                         </div>
                                     </div>
@@ -311,16 +307,16 @@
                                     <h6 class="m-0 font-weight-bold text-primary">Testing Date</h6>
                                 </div>
                                 <div class="card-body">
-                                    <div class="container">
-                                        <div class="form-group">
-                                            <div class="datepicker date input-group">
-                                                <input type="text" placeholder="Choose Date" class="form-control" id="test-input">
-                                                <div class="input-group-append">
-                                                <span class="input-group-text"><i class="fa fa-calendar"></i></span>
-                                                </div>
+
+                                    <div class="form-group">
+                                        <div class="datepicker date input-group">
+                                            <input type="text" class="form-control" id="datepicker3" placeholder="Select date">
+                                            <div class="input-group-append">
+                                            <span class="input-group-text"><i class="fa fa-calendar"></i></span>
                                             </div>
                                         </div>
                                     </div>
+                                
                                 </div>
                             </div>
                         </div>
@@ -381,8 +377,8 @@
                                     <div class="dropdown">
                                         <select class="form-control" id="threshold-type-input">
                                             <option value="" disabled selected hidden></option>
-                                            <option value="Dollar">Dollar</option>
-                                            <option value="Quantity">Quantity</option>
+                                            <option value="$">Dollar</option>
+                                            <option value="Units">Quantity</option>
                                           </select>
                                     </div>
                                 </div>
@@ -512,6 +508,43 @@
 
     <!-- Custom scripts for all pages-->
     <script type="module" src="js/sb-admin-2.min.js"></script>
+
+    <!-- Include Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+
+  <!-- Include Datepicker JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
+  <style>
+    /* Override Bootstrap styles for datepicker */
+    .datepicker-dropdown {
+    padding-left: 0.5rem;
+    
+      text-align: center;
+    }
+  </style>
+
+  <script>
+    // Initialize the datepickers
+    $(document).ready(function() {
+      $('#datepicker1').datepicker({
+        format: 'yyyy-mm-dd',
+        autoclose: true
+      });
+
+      $('#datepicker2').datepicker({
+        format: 'yyyy-mm-dd',
+        autoclose: true
+      });
+
+      $('#datepicker3').datepicker({
+        format: 'yyyy-mm-dd',
+        autoclose: true
+      });
+    });
+  </script>
 
 </body>
 
