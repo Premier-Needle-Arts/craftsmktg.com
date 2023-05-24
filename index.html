@@ -50,6 +50,12 @@
                     <span>Promotion Builder</span></a>
             </li>
 
+            <li class="nav-item">
+                <a class="nav-link" href="utm.html">
+                    <i class="fas fa-fw fa-code"></i>
+                    <span>UTM Builder</span></a>
+            </li>
+
             <!-- Divider -->
             <hr class="sidebar-divider">
 
@@ -60,16 +66,44 @@
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="true" aria-controls="collapseTwo">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePromotion"
+                    aria-expanded="true" aria-controls="collapsePromotion">
                     <i class="fas fa-fw fa-folder"></i>
                     <span>Promotion Types</span>
                 </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                <div id="collapsePromotion" class="collapse" aria-labelledby="headingPromotion" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Custom Processors:</h6>
-                        <a class="collapse-item" href="">Single Item Discount</a>
-                        <a class="collapse-item" href="">Discount By Category</a>
+                        <a class="collapse-item text-wrap" href="">Discount, Sitewide</a>
+                        <a class="collapse-item text-wrap" href="">Discount, Item </a>
+                        <a class="collapse-item text-wrap" href="">Discount, Category</a>
+                        <a class="collapse-item text-wrap" href="">Buy X, Get Y Discount, Sitewide </a>
+                        <a class="collapse-item text-wrap" href="">Buy X Item, Get Y Discount On Item</a>
+                        <a class="collapse-item text-wrap" href="">Buy X Category, Get Y Discount On Category</a>
+                        <a class="collapse-item text-wrap" href="">Buy X Category A, Get Y Discount On Category B</a>
+                        <a class="collapse-item text-wrap" href="">Free Item</a>
+                        <a class="collapse-item text-wrap" href="">Free Shipping</a>
+                        <a class="collapse-item text-wrap" href="">Tiered Discount</a>
+
+                    </div>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUTM"
+                    aria-expanded="true" aria-controls="collapseUTM">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>UTM Parameters</span>
+                </a>
+                <div id="collapseUTM" class="collapse" aria-labelledby="headingUTM" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">What is a...</h6>
+                        <a class="collapse-item text-wrap" href="">UTM Code</a>
+                        <a class="collapse-item text-wrap" href="">Source </a>
+                        <a class="collapse-item text-wrap" href="">Medium</a>
+                        <a class="collapse-item text-wrap" href="">Campaign </a>
+                        <a class="collapse-item text-wrap" href="">Content</a>
+
                     </div>
                 </div>
             </li>
@@ -451,7 +485,10 @@
 
                     <!-- ROW 6 -->
                     <div class="d-sm-flex align-items-center justify-content-center mb-4">
-                        <button onclick="myFunction()" type = "button"> Generate UTM </button>
+                        <button class = "d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" onclick="myFunction()" type = "button"> 
+                            <i class="fas fa-download fa-sm text-white-80"></i>
+                            Generate UTM 
+                        </button>
                     </div>
                     <!-- ROW 6 END-->
 
