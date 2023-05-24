@@ -1,1 +1,0 @@
-{"mappings":"AAAA,oCAAoC;AACpC,EAAE,UAAU,KAAK,CAAC,WAAW;IAC3B,EAAE,cAAc,SAAS;AAC3B","sources":["js/demo/datatables-demo.js"],"sourcesContent":["// Call the dataTables jQuery plugin\n$(document).ready(function() {\n  $('#dataTable').DataTable();\n});\n"],"names":[],"version":3,"file":"tables.0591f0d4.js.map","sourceRoot":"/__parcel_source_root/"}
