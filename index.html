@@ -190,330 +190,289 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-
                     <!-- ROW 1 -->        
-                    <div class="row">
+                    <div class="row justify-content-center">
 
-                        <!-- ROW 1, COLUMN 1 -->
-                        <div class="col-xl-3 col-md-6">
-
-                            <!-- QUESTION 1: BRAND -->
+                        <div class="col-xl-12 col-md-6">
+                           
                             <div class="card shadow mb-4">
+
                                 <div class="card-header">
-                                    <h6 class="m-0 font-weight-bold text-primary">Brand</h6>
+                                    <h6 class="m-0 font-weight-bold text-primary">UTM Builder</h6>
                                 </div>
+
                                 <div class="card-body">
-                                    <div class="dropdown">
-                                        <select class="form-control" id="brand-input">
-                                            <option value="" disabled selected hidden></option>
-                                            <option value="CT">CT</option>
-                                            <option value="KP">KP</option>
-                                            <option value="ST">ST</option>
-                                            <option value="WC">WC</option>
-                                          </select>
+
+                                    <!-- ROW 0 START-->
+                                    <div class="row mb-4">
+
+                                        <!-- QUESTION 1: BRAND -->
+                                        <div class="col-xl-2 col-md-6">
+                                            <div class="mb-2">
+                                                <h6 class="m-0"><b>Brand*</b></h6>
+                                            </div>
+                                            <div class="dropdown">
+                                                <select class="form-control" id="brand-input">
+                                                    <option value="" disabled selected hidden></option>
+                                                    <option value="CT">CT</option>
+                                                    <option value="KP">KP</option>
+                                                    <option value="ST">ST</option>
+                                                    <option value="WC">WC</option>
+                                                  </select>
+                                            </div>
+                                        </div>
+
                                     </div>
+
+                                    <!-- ROW 1 START -->
+                                    <div class="row mb-4">
+
+                                        <!-- QUESTION 2: PROMO -->
+                                        <div class="col-xl-3 col-md-6">
+                                            <div class="mb-2">
+                                                <h6 class="m-0"><b>Promotion Code*</b></h6>
+                                            </div>
+                                            <div class="input">
+                                                <input class="form-control" id="promo-input" type="text" value="" required>
+                                            </div>
+                                        </div>
+
+                                        <!-- QUESTION 3: PROMO TYPE -->
+                                        <div class="col-xl-3 col-md-6">
+                                            <div class="mb-2">
+                                                <h6 class="m-0"><b>Promotion Type*</b></h6>
+                                            </div>
+                                            <div class="dropdown">
+                                                <select class="form-control" id="promo-type-input">
+                                                    <option value="" disabled selected hidden></option>
+                                                    <option value="">Discount Sitewide</option>
+                                                    <option value="SingleItemDiscountPromo">Discount By Item</option>
+                                                    <option value="DiscountByCategory">Discount By Category</option>
+                                                    <option value="FreeItemPromo">Free Item</option>
+                                                    <option value="ShippingPromo">Free Shipping</option>
+                                                    <option value="BuyXGetNDiscount">Buy X, Get Y Discount</option>
+                                                    <option value="PerItemBuyXGetNDiscount">Buy X Item, Get Y Discount</option>
+                                                    <option value="PerCategoryBuyXGetNDiscount">Buy X Category, Get Y Discount</option>
+                                                    <option value="BuyXFromCatAGetDiscountCatB">Buy X From Category A, Get Y Discount On Category B</option>
+                                                  </select>
+                                            </div>
+                                        </div>
+
+                                        <!-- QUESTION 4: USE CASE -->
+                                        <div class="col-xl-3 col-md-6">
+                                            <div class="mb-2">
+                                                <h6 class="m-0"><b>Use Case*</b></h6>
+                                            </div>
+                                            <div class="dropdown">
+                                                <select class="form-control" id="use-case-input">
+                                                    <option value="" disabled selected hidden></option>
+                                                    <option value="1">Once Per Customer</option>
+                                                    <option value="0">Unlimited Use</option>
+                                                  </select>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- ROW 1 END -->
+
+                                    <!-- ROW 2 START-->
+                                    <div class = "row mb-4">
+
+                                        <!-- QUESTION 1: START DATE -->
+                                        <div class="col-xl-4 col-md-6">
+                                            <div class="mb-2">
+                                                <h6 class="m-0"><b>Start Date*</b></h6>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="datepicker date input-group">
+                                                    <input type="text" class="form-control" id="datepicker1" placeholder="Select date">
+                                                    <div class="input-group-append">
+                                                    <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- QUESTION 2: END DATE -->
+                                        <div class="col-xl-4 col-md-6">
+                                            <div class="mb-2">
+                                                <h6 class="m-0"><b>End Date*</b></h6>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="datepicker date input-group">
+                                                    <input type="text" class="form-control" id="datepicker2" placeholder="Select date">
+                                                    <div class="input-group-append">
+                                                    <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- QUESTION 3: TEST DATE -->
+                                        <div class="col-xl-4 col-md-6">
+                                            <div class="mb-2">
+                                                <h6 class="m-0"><b>Test Date*</b></h6>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="datepicker date input-group">
+                                                    <input type="text" class="form-control" id="datepicker3" placeholder="Select date">
+                                                    <div class="input-group-append">
+                                                    <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- ROW 2 END-->
+
+                                    <!-- ROW 3 START -->
+                                    <div class = "row mb-4">
+
+                                        <!-- QUESTION 1: DISCOUNT TYPE -->
+                                        <div class="col-xl-2 col-md-6">
+                                            <div class="mb-2">
+                                                <h6 class="m-0"><b>Discount Type*</b></h6>
+                                            </div>
+                                            <div class="dropdown">
+                                                <select class="form-control" id="discount-type-input">
+                                                    <option value="" disabled selected hidden></option>
+                                                    <option value="$">Dollar</option>
+                                                    <option value="%">Percent</option>
+                                                  </select>
+                                            </div>
+                                        </div>
+
+                                        <!-- QUESTION 2: DISCOUNT AMOUNT -->
+                                        <div class="col-xl-4 col-md-6">
+                                            <div class="mb-2">
+                                                <h6 class="m-0"><b>Discount Amount*</b></h6>
+                                            </div>
+                                            <div class="input">
+                                                <input class="form-control" id="discount-input" type="text" value="" required>
+                                            </div>
+                                        </div>
+
+                                        <!-- QUESTION 3: THRESHOLD TYPE -->
+                                        <div class="col-xl-2 col-md-6">
+                                            <div class="mb-2">
+                                                <h6 class="m-0"><b>Threshold Type</b></h6>
+                                            </div>
+                                            <div class="dropdown">
+                                                <select class="form-control" id="threshold-type-input">
+                                                    <option value="" disabled selected hidden></option>
+                                                    <option value="$">Dollar</option>
+                                                    <option value="Units">Quantity</option>
+                                                  </select>
+                                            </div>
+                                        </div>
+
+                                        <!-- QUESTION 4: THRESHOLD AMOUNT -->
+                                        <div class="col-xl-4 col-md-6">
+                                            <div class="mb-2">
+                                                <h6 class="m-0"><b>Threshold Amount</b></h6>
+                                            </div>
+                                            <div class="input">
+                                                <input class="form-control" id="threshold-input" type="text" value="" required>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- ROW 4 END-->
+
+                                    <!-- ROW 5 START-->
+                                    <div class = "row mb-4">
+
+                                        <!-- QUESTION 1: ITEMS / CATEGORY-->
+                                        <div class="col-xl-12 col-md-6">
+                                            <div class="mb-2">
+                                                <h6 class="m-0"><b>Items / Category</b></h6>
+                                            </div>
+                                            <div class="input">
+                                                <input class="form-control" id="item-input" type="text" value="" required>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- ROW 5 END-->
+
+                                    <!-- ROW 6 START-->
+                                    <div class = "row mb-4">
+
+                                        <!-- QUESTION 1: ITEMS / CATEGORY-->
+                                        <div class="col-xl-12 col-md-6">
+                                            <div class="mb-2">
+                                                <h6 class="m-0"><b>Description</b></h6>
+                                            </div>
+                                            <div class="input">
+                                                <input class="form-control" id="description-input" type="text" value="" required>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- ROW 6 END-->
+
+                                    <!-- ROW 7 START -->
+                                    <div class="d-sm-flex align-items-center justify-content-center">
+                                        <button class = "d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" onclick="myFunction()" type = "button"> 
+                                        <i class="fas fa-download fa-sm text-white-80"></i>
+                                        Print Instructions 
+                                        </button>
+                                    </div>
+                                    <!-- ROW 7 END-->
+
                                 </div>
+
                             </div>
 
                         </div>
 
-                        <!-- ROW 1, COLUMN 2 -->
-                        <div class="col-xl-3 col-md-6 ">
+                    </div>
+                    <!-- ROW 1 END-->
 
-                            <!-- Promo Code -->
+
+                    <!-- ROW 2 START -->        
+                    <div class="row justify-content-center">
+
+                        <div class="col-xl-12 col-md-6">
+                           
                             <div class="card shadow mb-4">
+
                                 <div class="card-header">
-                                    <h6 class="m-0 font-weight-bold text-primary">Promotion Code</h6>
-                                </div>
-                                <div class="card-body">
-                                    <div class="input">
-                                        <input class="form-control" id="promo-input" type="text" value="" required>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <!-- ROW 1, COLUMN 3 -->
-                        <div class="col-xl-3 col-md-6">
-
-                            <!-- PROMO TYPE -->
-                            <div class="card shadow mb-4">
-                                <div class="card-header ">
-                                    <h6 class="m-0 font-weight-bold text-primary">Promotion Type</h6>
-                                </div>
-                                <div class="card-body">
-                                    <div class="dropdown">
-                                        <select class="form-control" id="promo-type-input">
-                                            <option value="" disabled selected hidden></option>
-                                            <option value="">Discount Sitewide</option>
-                                            <option value="SingleItemDiscountPromo">Discount By Item</option>
-                                            <option value="DiscountByCategory">Discount By Category</option>
-                                            <option value="FreeItemPromo">Free Item</option>
-                                            <option value="ShippingPromo">Free Shipping</option>
-                                            <option value="BuyXGetNDiscount">Buy X, Get Y Discount</option>
-                                            <option value="PerItemBuyXGetNDiscount">Buy X Item, Get Y Discount</option>
-                                            <option value="PerCategoryBuyXGetNDiscount">Buy X Category, Get Y Discount</option>
-                                            <option value="BuyXFromCatAGetDiscountCatB">Buy X From Category A, Get Y Discount On Category B</option>
-                                          </select>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <!-- ROW 1, COLUMN 4 -->
-                        <div class="col-xl-3 col-md-6">
-
-                            <!-- Threshold Type -->
-                            <div class="card shadow mb-4">
-                                <div class="card-header ">
-                                    <h6 class="m-0 font-weight-bold text-primary">Use Case</h6>
-                                </div>
-                                <div class="card-body">
-                                    <div class="dropdown">
-                                        <select class="form-control" id="use-case-input">
-                                            <option value="" disabled selected hidden></option>
-                                            <option value="1">Once Per Customer</option>
-                                            <option value="0">Unlimited Use</option>
-                                          </select>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- ROW 1 END -->   
-
-                    <!-- ROW 2 -->        
-                    <div class="row">
-
-                        <!-- ROW 2, COLUMN 1 -->
-                        <div class="col-xl-4 col-md-6">
-
-                            <!-- Start Date -->
-                            <div class="card shadow mb-4">
-                                <div class="card-header ">
-                                    <h6 class="m-0 font-weight-bold text-primary">Start Date</h6>
-                                </div>
-                                <div class="card-body">
-                                    <div class="form-group">
-                                        <div class="datepicker date input-group">
-                                            <input type="text" class="form-control" id="datepicker1" placeholder="Select date">
-                                            <div class="input-group-append">
-                                            <span class="input-group-text"><i class="fa fa-calendar"></i></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        
-                        <!-- ROW 2, COLUMN 2 -->
-                        <div class="col-xl-4 col-md-6 ">
-
-                            <!-- End Date -->
-                            <div class="card shadow mb-4">
-                                <div class="card-header ">
-                                    <h6 class="m-0 font-weight-bold text-primary">End Date</h6>
-                                </div>
-                                <div class="card-body">
-                                    <div class="form-group">
-                                        <div class="datepicker date input-group">
-                                            <input type="text" class="form-control" id="datepicker2" placeholder="Select date">
-                                            <div class="input-group-append">
-                                            <span class="input-group-text"><i class="fa fa-calendar"></i></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <!-- ROW 2, COLUMN 3 -->
-                        <div class="col-xl-4 col-md-6 ">
-
-                            <!-- Testing Date -->
-                            <div class="card shadow mb-4">
-                                <div class="card-header ">
-                                    <h6 class="m-0 font-weight-bold text-primary">Testing Date</h6>
-                                </div>
-                                <div class="card-body">
-
-                                    <div class="form-group">
-                                        <div class="datepicker date input-group">
-                                            <input type="text" class="form-control" id="datepicker3" placeholder="Select date">
-                                            <div class="input-group-append">
-                                            <span class="input-group-text"><i class="fa fa-calendar"></i></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- ROW 2 END-->
-
-                    <!-- ROW 3 -->        
-                    <div class="row">
-
-                        <!-- ROW 3, COLUMN 1 -->
-                        <div class="col-xl-2 col-md-6 ">
-
-                            <!-- Discount Type -->
-                            <div class="card shadow mb-4">
-                                <div class="card-header ">
-                                    <h6 class="m-0 font-weight-bold text-primary">Discount Type</h6>
-                                </div>
-                                <div class="card-body">
-                                    <div class="dropdown">
-                                        <select class="form-control" id="discount-type-input">
-                                            <option value="" disabled selected hidden></option>
-                                            <option value="$">Dollar</option>
-                                            <option value="%">Percent</option>
-                                          </select>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        
-                        <!-- ROW 3, COLUMN 2 -->
-                        <div class="col-xl-4 col-md-6">
-
-                            <!-- Discount Amount -->
-                            <div class="card shadow mb-4">
-                                <div class="card-header ">
-                                    <h6 class="m-0 font-weight-bold text-primary">Discount Amount</h6>
-                                </div>
-                                <div class="card-body">
-                                    <div class="input">
-                                        <input class="form-control" id="discount-input" type="text" value="" required>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <!-- ROW 3, COLUMN 3 -->
-                        <div class="col-xl-2 col-md-6">
-
-                            <!-- Threshold Type -->
-                            <div class="card shadow mb-4">
-                                <div class="card-header ">
-                                    <h6 class="m-0 font-weight-bold text-primary">Threshold Type</h6>
-                                </div>
-                                <div class="card-body">
-                                    <div class="dropdown">
-                                        <select class="form-control" id="threshold-type-input">
-                                            <option value="" disabled selected hidden></option>
-                                            <option value="$">Dollar</option>
-                                            <option value="Units">Quantity</option>
-                                          </select>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- ROW 3, COLUMN 4 -->
-                        <div class="col-xl-4 col-md-6">
-
-                            <!-- Threshold Amount -->
-                            <div class="card shadow mb-4">
-                                <div class="card-header ">
-                                    <h6 class="m-0 font-weight-bold text-primary">Threshold Amount</h6>
-                                </div>
-                                <div class="card-body">
-                                    <input class="form-control" id="threshold-input" type="text" value="" required>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- ROW 3 END-->
-
-
-                    <!-- ROW 4 -->        
-                    <div class="row">
-
-                        <!-- ROW 4, COLUMN 1 -->
-                        <div class="col-xl-12 col-md-6 ">
-
-                            <!-- Category -->
-                            <div class="card shadow mb-4">
-                                <div class="card-header ">
-                                    <h6 class="m-0 font-weight-bold text-primary">Item or Category</h6>
-                                </div>
-                                <div class="card-body">
-                                    <div class="input">
-                                        <input class="form-control" id="item-input" type="text" value="" required>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <!-- ROW 4 END-->
-
-                    <!-- ROW 5 -->        
-                    <div class="row">
-
-                        <!-- ROW 5, COLUMN 1 -->
-                        <div class="col-xl-12 col-md-6 ">
-
-                            <!-- Category -->
-                            <div class="card shadow mb-4">
-                                <div class="card-header ">
-                                    <h6 class="m-0 font-weight-bold text-primary">Description</h6>
-                                </div>
-                                <div class="card-body">
-                                    <div class="input">
-                                        <input class="form-control" id="description-input" type="text" value="" required>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <!-- ROW 5 END-->
-
-                    <!-- ROW 6 -->
-                    <div class="d-sm-flex align-items-center justify-content-center mb-4">
-                        <button class = "d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" onclick="myFunction()" type = "button"> 
-                            <i class="fas fa-download fa-sm text-white-80"></i>
-                            Generate UTM 
-                        </button>
-                    </div>
-                    <!-- ROW 6 END-->
-
-                    <!-- ROW 7 -->        
-                    <div class="row">
-
-                        <!-- ROW 7, COLUMN 1 -->
-                        <div class="col-xl-12 col-md-6 ">
-
-                            <!-- Category -->
-                            <div class="card shadow mb-4">
-                                <div class="card-header ">
                                     <h6 class="m-0 font-weight-bold text-primary">Output</h6>
                                 </div>
+
                                 <div class="card-body">
-                                    <div class="form-group">
-                                        <textarea class="form-control" id="output" rows="7"></textarea>
-                                      </div>
+
+                                    <!-- ROW 0 START-->
+                                    <div class="row">
+
+                                        <!-- QUESTION 1: BRAND -->
+                                        <div class="col-xl-12 col-md-6">
+                                            <div class="form-group">
+                                                <textarea class="form-control" id="output" rows="7"></textarea>
+                                              </div>
+                                        </div>
+
+                                    </div>
+
+                                    <!-- ROW 1 START -->
+                                    <div class="d-sm-flex align-items-center justify-content-center">
+                                        <button class = "d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" onclick="copyText()" type = "button"> 
+                                        <i class="fas fa-copy fa-sm text-white-80"></i>
+                                            Copy Contents
+                                        </button>
+                                    </div>
+                                    <!-- ROW 1 END-->
+
                                 </div>
+
                             </div>
 
                         </div>
 
                     </div>
-                    <!-- ROW 7 END-->
+                    <!-- END ROW 2-->
 
                 </div>
                 <!-- /.container-fluid -->
