@@ -49,7 +49,7 @@
                     <span>Promotion Builder</span></a>
             </li>
 
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="utm.html">
                     <i class="fas fa-fw fa-code"></i>
                     <span>UTM Builder</span></a>
@@ -89,7 +89,7 @@
                 </div>
             </li>
 
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUTM"
                     aria-expanded="true" aria-controls="collapseUTM">
                     <i class="fas fa-fw fa-folder"></i>
@@ -103,7 +103,6 @@
                         <a class="collapse-item text-wrap" href="utm-help.html#headingThree">Medium</a>
                         <a class="collapse-item text-wrap" href="utm-help.html#headingFour">Campaign </a>
                         <a class="collapse-item text-wrap" href="utm-help.html#headingFive">Content</a>
-
                     </div>
                 </div>
             </li>
@@ -154,7 +153,7 @@
                                     </div>
                                     <div>
                                         <div class="small text-gray-500">June 16, 2023</div>
-                                        <span class="font-weight-bold">Check for updates here!</span>
+                                        <span class="font-weight-bold">Check here for updates!</span>
                                     </div>
                                 </a>
                                 <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
@@ -168,7 +167,6 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-
                     <!-- ROW 1 -->        
                     <div class="row justify-content-center">
 
@@ -177,88 +175,117 @@
                            
                             <div class="card shadow mb-4">
                                 <div class="card-header">
-                                    <h6 class="m-0 font-weight-bold text-primary">UTM Builder</h6>
+                                    <h6 class="m-0 font-weight-bold text-primary">UTM Code Documentation</h6>
                                 </div>
                                 <div class="card-body">
-                                    <!-- QUESTION 1: URL -->
-                                    <div class="mb-2">
-                                        <h6 class="m-0"><b>URL</b> - What is the landing page?</h6>
-                                    </div>
-                                    <div class="input">
-                                        <input class="form-control" id="url-input" type="text" value="" required>
-                                    </div>
-                                    <!-- QUESTION 2: SOURCE -->
-                                    <div class="mb-2 mt-4">
-                                        <h6 class="m-0"><b>Source</b> - What platform?</h6>
-                                    </div>
-                                    <div class="dropdown">
-                                        <select class="form-control" name="" value="" id="source-input" type="select" required>
-                                            <option value="" disabled selected hidden></option>
-                                            <option value="blog">Blog</option>
-                                            <option value="etsy">Etsy</option>
-                                            <option value="facebook">Facebook</option>
-                                            <option value="instagram">Instagram</option>
-                                            <option value="pinterest">Pinterest</option>
-                                            <option value="libsyn">Podcast</option>
-                                            <option value="ravelry">Ravelry</option>
-                                            <option value="show">Show</option>
-                                            <option value="tiktok">TikTok</option>
-                                            <option value="twitter">Twitter</option>
-                                            <option value="youtube">Youtube</option>
-                                        </select>
-                                    </div>
-                                    <!-- QUESTION 3: MEDIUM -->
-                                    <div class="mb-2 mt-4">
-                                        <h6 class="m-0"><b>Medium</b> - How is it being shared?</h6>
-                                    </div>
-                                    <div class="dropdown">
-                                        <select class="form-control" value="" id="medium-input" type="select" required>
-                                            <option value=""disabled selected hidden></option>
-                                            <option value="cpc">Ad</option>
-                                            <option value="email">Email</option>
-                                            <option value="referral">Referral</option>
-                                            <option value="social">Social</option>
-                                          </select>
-                                    </div>
-                                    <!-- QUESTION 4: CAMPAIGN -->
-                                    <div class="mb-2 mt-4">
-                                        <h6 class="m-0"><b>Campaign</b> - What is the campaign for?</h6>
-                                    </div>
-                                    <div class="dropdown">
-                                        <select class="form-control" value="" id="campaign-input" type="select" required>
-                                            <option value=""disabled selected hidden></option>
-                                            <option value="blogpost">Blog Post</option>
-                                            <option value="etsy">Etsy</option>
-                                            <option value="fcbk">Facebook Ad</option>
-                                            <option value="fcbkpost">Facebook Post</option>
-                                            <option value="instagram">Instagram Ad</option>
-                                            <option value="instapost">Instagram Post</option>
-                                            <option value="pinterest">Pinterest Ad</option>
-                                            <option value="pinpost">Pinterest Post</option>
-                                            <option value="podcast">Podcast</option>
-                                            <option value="qrcode">QR Code</option>
-                                            <option value="ravelry">Ravelry Ad</option>
-                                            <option value="ravpost">Ravelry Post</option>
-                                            <option value="tiktok">TikTok</option>
-                                            <option value="twitter">Twitter</option>
-                                            <option value="youtube">Youtube</option>
-                                        </select>
-                                    </div>
-                                    <!-- QUESTION 2: SOURCE -->
-                                    <div class="mb-2 mt-4">
-                                        <h6 class="m-0"><b>Content</b> - Any sub-descriptors?</h6>
-                                    </div>
-                                    <div class="input">
-                                        <input class="form-control" id="content-input" type="text" value="" required>
-                                    </div>
+                                    <div id="accordion">
 
-                                    <div class="d-sm-flex justify-content-center mt-4">
-                                        <button class = "d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" onclick="myFunction()" type = "button"> 
-                                            <i class="fas fa-download fa-sm text-white-80"></i>
-                                            Generate UTM 
-                                        </button>
-                                    </div>
+                                        <div class="card">
+                                          <div class="card-header" id="headingOne">
+                                            <h5 class="mb-0">
+                                              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                What is a UTM Code?
+                                              </button>
+                                            </h5>
+                                          </div>
+                                      
+                                          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                            <div class="card-body">
+                                                A UTM, in its simplest form, is just a snipppit of code that we add to the end of a link.
+                                                <br> <br>
+                                                In practice, it’s a summation of 4 context clues that lets us group traffic in an easy to understand way, so we'll go over them below.
+                                            </div>
+                                          </div>
+                                        </div>
 
+                                        <div class="card">
+                                          <div class="card-header" id="headingTwo">
+                                            <h5 class="mb-0">
+                                              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                What is a Source?
+                                              </button>
+                                            </h5>
+                                          </div>
+                                          <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion">
+                                            <div class="card-body">
+                                                This parameter (utm_source) defines where the traffic is coming from.
+                                                <br> <br>
+                                                This can be a social network, a podcast, etc.
+                                                <br> <br>
+                                                The ones we would generally use are listed in a drop down, but if there are others that should be added, let Michael know.
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <div class="card">
+                                          <div class="card-header" id="headingThree">
+                                            <h5 class="mb-0">
+                                              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                What is a Medium?
+                                              </button>
+                                            </h5>
+                                          </div>
+                                          <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordion">
+                                            <div class="card-body">
+                                                This parameter (utm_medium) is used to identify how the link is being shared.
+                                                <br> <br>
+                                                It will only ever be an Ad, Email, Social, or Referral. 
+                                                <br> <br>
+                                                The first three are straight forward, but referral is meant to be the catch all for things that don't fit in a tidy box. An example of this would be an in-person QR code.
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <div class="card">
+                                            <div class="card-header" id="headingFour">
+                                              <h5 class="mb-0">
+                                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                  What is a Campaign?
+                                                </button>
+                                              </h5>
+                                            </div>
+                                            <div id="collapseFour" class="collapse show" aria-labelledby="headingFour" data-parent="#accordion">
+                                              <div class="card-body">
+                                                This parameter (utm_campaign) is used to identify the campaign we are running (or in Social's case, the platform we are posting from).
+                                                <br> <br>
+                                                In Crafts Group we often refer to this as the Media ID, because this is the part of the UTM code that gets credit for the sale internally.
+                                                <br> <br>
+                                                Using a consistent campaign name is paramount, which is why this tool exists.
+                                                <br> <br>
+                                                <b>NOTE:</b> If you are making a custom campaign, it’s <i>very important</i> that this be entered into Response before a link is sent out!
+                                                If you are unsure how to check, please reach out to Michael! Otherwise our internal order tables won’t know where an order came from, and Michael will probably be sad.
+                                              </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card">
+                                            <div class="card-header" id="headingFive">
+                                              <h5 class="mb-0">
+                                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                                  What is Content?
+                                                </button>
+                                              </h5>
+                                            </div>
+                                            <div id="collapseFive" class="collapse show" aria-labelledby="headingFive" data-parent="#accordion">
+                                              <div class="card-body">
+                                                This parameter (utm_content) is used to determine what someone clicked to get to our site when there are multiple links pointing to the same url/campaign.
+                                                <br> <br>
+                                                In practice this would be:
+                                                <br> <br>
+                                                Emails: The specific link inside of an email. (shop-now, specific_sale_link, etc.)
+                                                <br> <br>
+                                                Podcasts: The episode number. (ep-1, ep_2, etc.)
+                                                <br> <br>
+                                                Youtube: The video title, or a summary. (hand-painting, tubular_cast, etc.)
+                                                <br> <br>
+                                                Socials: The specific sale or campaign that we are promoting. (summer-yarn-sale, etc.)
+                                                <br> <br>
+                                                <i>P.s. It doesn't matter if you prefer using dashes or underscores. Just don't use spaces.</i>
+                                              </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
                                 </div>
                             </div>
 
@@ -266,38 +293,6 @@
 
                     </div>
                     <!-- ROW 1 END -->   
-
-                    <!-- ROW 7 -->        
-                    <div class="row justify-content-center">
-
-                        <!-- ROW 7, COLUMN 1 -->
-                        <div class="col-xl-8 col-md-6 mb-4">
-
-                            <!-- Category -->
-                            <div class="card shadow">
-                                <div class="card-header ">
-                                    <h6 class="m-0 font-weight-bold text-primary">Output</h6>
-                                </div>
-                                <div class="card-body">
-                                    <div class="form-group">
-                                        <textarea class="form-control" id="output" rows="1"></textarea>
-                                      </div>
-                                </div>
-
-                                <div class="d-sm-flex justify-content-center mb-4">
-                                    <button class = "d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" onclick="copyText()" type = "button"> 
-                                        <i class="fas fa-copy fa-sm text-white-80"></i>
-                                        Copy Contents
-                                    </button>
-                                </div>
-
-                            </div>
-                            
-
-                        </div>
-
-                    </div>
-                    <!-- ROW 7 END-->
 
                 </div>
                 <!-- /.container-fluid -->

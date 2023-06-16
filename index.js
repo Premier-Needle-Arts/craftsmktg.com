@@ -139,7 +139,7 @@ function addDescription() {
 
 
 function myFunction() {
-    document.getElementById("output").value = addBrand() + addPromoType() + addPromo() + addMediaID() + addUseCase() + addStartDate() + addEndDate() + addTestDate() + addDiscount() + addThreshold() + addItems() + addDescription();
+    document.getElementById("output").value = addBrand() + addPromoType() + addPromo() + addMediaID() + addUseCase() + addStartDate() + addEndDate() + addTestDate() + addItems() + addDescription();
 }
 
 function copyText() {
