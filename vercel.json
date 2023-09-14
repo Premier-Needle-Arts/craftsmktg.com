@@ -1,4 +1,5 @@
 {
+    "cleanUrls": true,
     "rewrites": [
       {
         "source": "/:path*",
@@ -6,4 +7,5 @@
       }
     ]
   }
+
   
