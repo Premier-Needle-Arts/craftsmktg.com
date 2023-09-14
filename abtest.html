@@ -8,7 +8,6 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" type="image/ico" href="img/favicon.ico">
-    <script defer language="JavaScript" type="text/javascript" src="./utm.js"></script>
 
     <title>Crafts Marketing</title>
 
@@ -187,84 +186,77 @@
                                     <h6 class="m-0 font-weight-bold text-primary">AB Test</h6>
                                 </div>
                                 <div class="card-body">
-                                    <!-- QUESTION 1: URL -->
-                                    <div class="mb-2">
-                                        <h6 class="m-0"><b>URL</b> - What is the landing page?</h6>
-                                    </div>
-                                    <div class="input">
-                                        <input class="form-control" id="url-input" type="text" value="" required>
-                                    </div>
-                                    <!-- QUESTION 2: SOURCE -->
-                                    <div class="mb-2 mt-4">
-                                        <h6 class="m-0"><b>Source</b> - What platform?</h6>
-                                    </div>
-                                    <div class="dropdown">
-                                        <select class="form-control" name="" value="" id="source-input" type="select" required>
-                                            <option value="" disabled selected hidden></option>
-                                            <option value="blog">Blog</option>
-                                            <option value="etsy">Etsy</option>
-                                            <option value="facebook">Facebook</option>
-                                            <option value="instagram">Instagram</option>
-                                            <option value="jebbit">Jebbit</option>
-                                            <option value="pinterest">Pinterest</option>
-                                            <option value="libsyn">Podcast</option>
-                                            <option value="ravelry">Ravelry</option>
-                                            <option value="show">Show</option>
-                                            <option value="tiktok">TikTok</option>
-                                            <option value="twitter">Twitter</option>
-                                            <option value="youtube">Youtube</option>
-                                        </select>
-                                    </div>
-                                    <!-- QUESTION 3: MEDIUM -->
-                                    <div class="mb-2 mt-4">
-                                        <h6 class="m-0"><b>Medium</b> - How is it being shared?</h6>
-                                    </div>
-                                    <div class="dropdown">
-                                        <select class="form-control" value="" id="medium-input" type="select" required>
-                                            <option value=""disabled selected hidden></option>
-                                            <option value="cpc">Ad</option>
-                                            <option value="email">Email</option>
-                                            <option value="referral">Referral</option>
-                                            <option value="social">Social</option>
-                                          </select>
-                                    </div>
-                                    <!-- QUESTION 4: CAMPAIGN -->
-                                    <div class="mb-2 mt-4">
-                                        <h6 class="m-0"><b>Campaign</b> - What is the campaign for?</h6>
-                                    </div>
-                                    <div class="dropdown">
-                                        <select class="form-control" value="" id="campaign-input" type="select" required>
-                                            <option value=""disabled selected hidden></option>
-                                            <option value="blogpost">Blog Post</option>
-                                            <option value="etsy">Etsy</option>
-                                            <option value="fcbk">Facebook Ad</option>
-                                            <option value="fcbkpost">Facebook Post</option>
-                                            <option value="instagram">Instagram Ad</option>
-                                            <option value="instapost">Instagram Post</option>
-                                            <option value="jebbit">Jebbit Survey</option>
-                                            <option value="pinterest">Pinterest Ad</option>
-                                            <option value="pinpost">Pinterest Post</option>
-                                            <option value="podcast">Podcast</option>
-                                            <option value="ravelry">Ravelry Ad</option>
-                                            <option value="ravpost">Ravelry Post</option>
-                                            <option value="show">Show</option>
-                                            <option value="tiktok">TikTok</option>
-                                            <option value="twitter">Twitter</option>
-                                            <option value="youtube">Youtube</option>
-                                        </select>
-                                    </div>
-                                    <!-- QUESTION 2: SOURCE -->
-                                    <div class="mb-2 mt-4">
-                                        <h6 class="m-0"><b>Content</b> - Any sub-descriptors?</h6>
-                                    </div>
-                                    <div class="input">
-                                        <input class="form-control" id="content-input" type="text" value="" required>
+                                    <!-- ROW 0 START-->
+                                    <div class="row mb-4">
+
+                                        <!-- QUESTION: Sample Size -->
+                                        <div class="col-xl-4 col-md-6">
+                                            <div class="mb-2">
+                                                <h6 class="m-0"><b>Sample A</b></h6>
+                                            </div>
+                                            <input class="form-control" type="number" id="visitorsA">
+                                        </div>
+
+                                        <div class="col-xl-4 col-md-6">
+                                            <div class="mb-2">
+                                                <h6 class="m-0"><b>Sample B</b></h6>
+                                            </div>
+                                            <input class="form-control" type="number" id="visitorsB">
+                                        </div>
+
                                     </div>
 
+                                    <!-- ROW 1 START-->
+                                    <div class="row mb-4">
+
+                                        <!-- QUESTION 2: Conversion Size -->
+                                        <div class="col-xl-4 col-md-6">
+                                            <div class="mb-2">
+                                                <h6 class="m-0"><b>Conversions A</b></h6>
+                                            </div>
+                                            <input class="form-control" type="number" id="conversionsA">
+                                        </div>
+
+                                        <div class="col-xl-4 col-md-6">
+                                            <div class="mb-2">
+                                                <h6 class="m-0"><b>Conversions B</b></h6>
+                                            </div>
+                                            <input class="form-control" type="number" id="conversionsB">
+                                        </div>
+
+                                    </div>
+
+                                    <!-- ROW 2 START-->
+                                    <div class="row mb-4">
+
+                                        <!-- QUESTION 3: Sample Size -->
+                                        <div class="col-xl-4 col-md-6">
+                                            <div class="mb-2">
+                                                <h6 class="m-0"><b>Hypothesis Testing</b></h6>
+                                            </div>
+                                            <select class= "form-control" id="hypothesis">
+                                                <option value="one">One Sided</option>
+                                                <option value="two">Two Sided</option>
+                                              </select>
+                                        </div>
+
+                                        <div class="col-xl-4 col-md-6">
+                                            <div class="mb-2">
+                                                <h6 class="m-0"><b>Confidence</b></h6>
+                                            </div>
+                                            <select class= "form-control" id="confidence">
+                                                <option value="0.90">90%</option>
+                                                <option value="0.95">95%</option>
+                                                <option value="0.99">99%</option>
+                                              </select>
+                                        </div>
+
+                                    </div>
+                                    
                                     <div class="d-sm-flex justify-content-center mt-4">
-                                        <button class = "d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" onclick="myFunction()" type = "button"> 
-                                            <i class="fas fa-download fa-sm text-white-80"></i>
-                                            Generate UTM 
+                                        <button class = "d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" onclick="calculate()" type = "button"> 
+                                            <i class="fas fa-calculator fa-sm text-white-80"></i>
+                                            Calculate
                                         </button>
                                     </div>
 
@@ -289,19 +281,18 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <textarea class="form-control" id="output" rows="1"></textarea>
+                                        <textarea class="form-control" id="results" rows="10"></textarea>
                                       </div>
                                 </div>
 
                                 <div class="d-sm-flex justify-content-center mb-4">
-                                    <button class = "d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" onclick="copyText()" type = "button"> 
+                                    <button class = "d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" onclick="calculate()" type = "button"> 
                                         <i class="fas fa-copy fa-sm text-white-80"></i>
                                         Copy Contents
                                     </button>
                                 </div>
 
                             </div>
-                            
 
                         </div>
 
@@ -329,6 +320,12 @@
 
     </div>
     <!-- End of Page Wrapper -->
+
+    <!-- Custom javascript for calculator -->
+    <script defer language="JavaScript" type="text/javascript" src="abtest.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.4.4/math.min.js"></script>
+
 
     <!-- Bootstrap core JavaScript-->
     <script type="module" src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
