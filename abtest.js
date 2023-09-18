@@ -1,5 +1,5 @@
 function validateInputs(visitorsA, visitorsB, conversionsA, conversionsB) {
-  if(visitorsA <= 0 || visitorsB <= 0 || conversionsA < 0 || conversionsB < 0 || conversionsA > visitorsA || conversionsB > visitorsB) {
+  if(conversionsA > visitorsA || conversionsB > visitorsB) {
     alert("Invalid inputs");
     return false;
   }
@@ -37,6 +37,7 @@ function calculate() {
   const stdErrorA = Math.sqrt((conversionRateA * (1 - conversionRateA)) / visitorsA);
   const stdErrorB = Math.sqrt((conversionRateB * (1 - conversionRateB)) / visitorsB);
   const stdErrorDiff = Math.sqrt(Math.pow(stdErrorA, 2) + Math.pow(stdErrorB, 2));
+
   const zScore = calculateZScore(conversionRateA, conversionRateB, stdErrorDiff);
   
   console.log("Standard Error A:", stdErrorA);
@@ -49,6 +50,7 @@ function calculate() {
     : 1 - normalCDF(Math.abs(zScore));
 
   const zAlpha = zScoreForConfidence(confidence);
+  console.log(zScoreForConfidence(confidence));
 
   const observedPower = (hypothesis === "two")
     ? 1 - normalCDF((zAlpha / 2 - Math.abs(zScore)) / stdErrorDiff)
@@ -56,16 +58,22 @@ function calculate() {
 
   const onesided = (zAlpha - Math.abs(zScore)) / stdErrorDiff;
   const twosided = (zAlpha / 2 - Math.abs(zScore)) / stdErrorDiff;
+
+  const onesidedtest = 1 - normalCDF((zAlpha / 2 - Math.abs(zScore)) / stdErrorDiff)
+  const twosidedtest = 1 - normalCDF((zAlpha - Math.abs(zScore)) / stdErrorDiff);
+
   console.log("Intermediate Value One Sided:", onesided);
+  console.log("Intermediate Value One Sided:", onesidedtest);
   console.log("Intermediate Value Two Sided:", twosided);
+  console.log("Intermediate Value One Sided:", twosidedtest);
   console.log("Observed Power:", observedPower);
 
-  //    Observed Power: ${observedPower.toFixed(4)}
   const resultsDiv = document.getElementById('results');
     resultsDiv.innerHTML = `
     Conversion Rate A: ${(conversionRateA * 100).toFixed(2)}%
     Conversion Rate B: ${(conversionRateB * 100).toFixed(2)}%
     Relative Uplift In Conversion Rate: ${(relativeUplift * 100).toFixed(2)}%
+    Observed Power: ${observedPower.toFixed(4)}
     P Value: ${pValue.toFixed(4)}
     Z-Score: ${zScore.toFixed(4)}
     Standard Error A: ${stdErrorA.toFixed(4)}
