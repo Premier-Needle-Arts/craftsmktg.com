@@ -139,8 +139,8 @@ function addDescription() {
 
 
 function myFunction() {
-  if(document.getElementById("promo-input").value.length > 11) {
-    document.getElementById("output").value = "The promotion code too long, please shorten.";
+  if(document.getElementById("promo-input").value.length > 16) {
+    document.getElementById("output").value = "The promotion code is too long, please shorten.";
     }
   else {
     document.getElementById("output").value = addBrand() + addPromoType() + addPromo() + addMediaID() + addUseCase() + addStartDate() + addEndDate() + addTestDate() + addItems() + addDescription();
